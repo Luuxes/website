@@ -1,0 +1,196 @@
+@import url(https://fonts.google.com/specimen/PT+Sans);
+* {
+    box-sizing: border-box;
+}
+
+/* Header stijling */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    box-shadow: 0 0.125rem 0 0 rgba(7, 7, 33, .15);
+    background: #fff;
+    position: fixed;
+    top: 0;
+    font-size: 0.8em;
+    max-height: 3.5em;
+}
+
+.logo {
+    display: none;
+    width:8%;
+    min-width:4em;
+    padding-right: .3em;
+}
+
+h1 {
+    margin-right: auto;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav img {
+    width: 3em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+nav a {
+    padding-left: 1.5em;
+    display: block;
+    color: #003082;
+    font-weight: 400;
+    background-color:transparent;
+    height: 3em;
+}
+
+form {
+    display: none;
+}
+
+
+/* Body stijling */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans";
+    line-height: 1.5625rem;
+    background-color: 000;
+    color:#003082;
+    background-color:#e6e6e9;
+}
+
+body a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #003082;
+}
+
+@media screen and (min-width: 48em) {
+    form {
+        display:block;
+    }
+    .logo {
+        display:flex;
+    }
+    .bladeren:after {
+        content: "Bladeren" ;
+    }
+    .lijst:after {
+        content: "Mijn lijst";
+    }
+    .account:after {
+        content: "Account";
+    }
+    h1 {
+        font-size: 2em;
+    }
+    main {
+        padding-top: 0;
+    }
+    h2 {
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 56em) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+
+
+@media screen and (min-width: 56em) {
+    nav > img {
+        width: 2.5em;
+    }
+    body {
+    background-image: url(plaatjes/intercitydirectamsterdam-rotterdam%20copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    }
+}
+
+
+
+
+h2  {
+    color: #003082;
+    font-weight: 400;
+    padding-left: 10px;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top; .2em;
+}
+
+main {
+    padding-top: 3em;
+    background-color: rgb(245, 245, 245);
+}
+
+
+
+@media screen and (min-width: 56em) {
+    main {
+    padding-top: 2em;
+    padding-bottom: .0625rem;
+    margin-right: 4em;
+    margin-left: 4em;
+    }
+}
+
+
+div {
+    padding: 0 0px;
+    margin: 0 1em;
+    font-family: "PT SANS";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+article {
+    min-width: 400px;
+    width:80%;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    background-color: white;
+}
+article img {
+    width: 100%;
+}
+
+@media screen and (min-width: 48em) {
+    article {
+        min-width: 250px;
+    }
+}
+
+section {
+    width: 100%;
+    overflow: scroll;
+    align-items: center;
+}
+
+h4 {
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+
+section {
+    margin-left: -1em;
+}
